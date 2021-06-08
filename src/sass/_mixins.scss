@@ -1,0 +1,40 @@
+@mixin borderBottom($width, $style, $color) {
+  border-bottom: $width $style $color;
+}
+
+@mixin border($width, $style, $color) {
+  border: $width $style $color;
+}
+
+@mixin grid-col-1d {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@mixin grid-col-2 {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+@mixin grid-col-3 {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@mixin grid-col-1 {
+  grid-template-columns: 1fr;
+}
+
+@mixin display-nth-child($elem, $position) {
+  #{$elem}:nth-child(1n + #{$position}) {
+    display: none;
+  }
+}
+
+@mixin display-nth-last-child($elem, $position) {
+  #{$elem}:nth-last-child(1n + #{$position}) {
+    display: none;
+  }
+}
+

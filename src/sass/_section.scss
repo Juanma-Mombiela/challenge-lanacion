@@ -1,0 +1,40 @@
+@import './mixins';
+@import './variables';
+@import './media-screen';
+
+.section {
+  margin: 10px;
+  padding-bottom: 1.25rem;
+  max-width: 920px;
+  @include borderBottom(1px, solid, $lightgray);
+
+  &-header {
+    width: 100%;
+    margin-bottom: 20px;
+    @include borderBottom(1px, solid, $lightgray);
+  }
+
+  &-title {
+    display: inline-block;
+    margin: 0 0 -1px 0;
+    padding: 0 0 5px 0;
+    line-height: 32px;
+    font: {
+      family: 'Roboto Slab', serif;
+      size: 24px;
+      weight: 900;
+      style: normal
+    }
+  }
+}
+
+.box-section {
+  margin: 10px;
+  padding-bottom: 1.25rem;
+  max-width: 920px;
+  @include borderBottom(1px, solid, $lightgray);
+  display: grid;
+  gap: 60px;
+  grid-template-columns: 2fr 1fr;
+  @include media-screen;
+}

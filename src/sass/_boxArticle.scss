@@ -1,0 +1,77 @@
+@import './mixins';
+@import './media-screen';
+
+.box-articles-1 {
+  @include grid-col-1d;
+
+  @include display-nth-child(article, 2);
+
+  @include media-screen;
+
+  padding: 2rem 0rem;
+
+  padding-right: 4rem;
+
+  border-right: 1px solid #cccccc;
+
+}
+
+.box-articles-2 {
+  @include grid-col-2;
+
+  @include display-nth-child(article, 3);
+
+  @include media-screen;
+
+  padding: 1rem 0rem;
+}
+
+.box-articles-3 {
+  @include grid-col-3;
+
+  @include display-nth-last-child(article, 4);
+
+  @include media-screen;
+
+  padding: 1rem 0rem;
+}
+
+.box-articles-6 {
+  @include grid-col-3;
+
+  @include display-nth-last-child(article, 7);
+
+  @include media-screen;
+
+  padding: 1rem 0rem;
+}
+
+.box-articles-9 {
+  @include grid-col-3;
+
+  @include display-nth-last-child(article, 10);
+
+  @include media-screen;
+
+  padding: 1rem 0rem;
+}
+
+.box-articles-12 {
+  @include grid-col-3;
+
+  @include display-nth-last-child(article, 13);
+
+  @include media-screen;
+
+  padding: 1rem 0rem;
+}
+
+.box-articles-15 {
+  @include grid-col-3;
+
+  @include display-nth-last-child(article, 16);
+
+  @include media-screen;
+
+  padding: 1rem 0rem;
+}

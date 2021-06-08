@@ -1,0 +1,49 @@
+@import './_mixins.scss';
+@import './variables';
+
+.nav-main {
+	font-size: 17px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 60px;
+	padding: 20px 10px;
+	ul {
+		display: flex;
+		li {
+			padding: 10px;
+		}
+	}
+}
+
+.nav-menu-right {
+	align-items: flex-end;
+}
+
+.nav-menu-left {
+	align-items: flex-start;
+}
+
+.logo-nacion {
+	width: 320px;
+	height: 30px;
+	overflow: hidden;
+}
+
+.log-nac {
+	width: 280;
+	height: 20px;
+	overflow: hidden;
+}
+
+.btn-warning {
+	background-color: #ffff24;
+	border: 1px solid #cccccc;
+	color: #000000;
+}
+
+.btn-primary {
+	background-color: #ffffff;
+	border: 1px solid #0074c4;
+	color: #0074c4;
+}
